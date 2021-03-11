@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.App-container {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -26,6 +26,85 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.table-container {
+  max-width: 60vw;
+  min-width: 500px;
+  height: 500px;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse
+}
+
+thead {
+
+}
+
+tbody {
+  display: table-row-group;
+}
+
+tr {
+  color: inherit;
+  display: table-row;
+  outline: 0;
+  vertical-align: middle;
+}
+
+.table-item {
+  display: table-cell;
+  padding: 16px;
+  font-size: 0.875rem;
+  text-align: left;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  /* border-bottom: 1px solid rgba(81, 81, 81, 1); */
+  letter-spacing: 0.01071em;
+  vertical-align: inherit;
+}
+
+.row-header {
+  padding: 10px;
+  padding-right: 100px;
+  cursor: pointer;
+}
+
+.row-header:hover {
+  box-shadow: -5px 5px 0px #1e2227;
+  border: 1px solid #222;
+  transition: border 0.5s;
+}
+
+.row-item {
+  text-align: right;
+  padding-left: 30px;
+  border: 1px solid #222;
+}
+
+.calculate {
+  background-color: #1f2327;
+  font-weight: 900;
+  /* border: initial; */
+  /* border: 2px solid #fff; */
+  /* border-top: 1px solid #fff !important; */
+}
+
+.row-item:nth-child(2n) {
+  background-color: #1b1f23 !important;
 }
 
 @keyframes App-logo-spin {
